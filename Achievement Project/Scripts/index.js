@@ -61,3 +61,17 @@ for (let achievement of achievements) {
 };
 }
 })
+
+//delete
+document.querySelector("#deleteForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+    const form = this;
+    const achievementName = form.achievementName.value;
+    // axios
+    //     .delete(`https://localhost/${achievementName}`)
+    //     .then(res => {
+    //         console.log(res);
+    //         form.reset();
+    //         form.userId.focus();
+    //     })
+})

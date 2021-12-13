@@ -7,36 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Achievement Project</title>
 </head>
-
-<body>
-    <h1>Achievements</h1>
-    <br>
-    <h1>Achievement Name</h1>
-    <input type="checkbox">
-    <input type="text" name="name" id=achievementName>
-
-    <h1>Description</h1>
-    <section>
-        <form id="UserForm">
-            <input type="checkbox">
-            <input type="text" name="name" id=achievementName>
-
-            <h1>Achievement Value</h1>
-            <input type="checkbox">
-            <input type="number" name="Value" id=achievementValue>
-
-            <h1>Achievement Unlocked</h1> <!-- true or false -->
-            <input type="checkbox">
-            <input type="boolean" name="Unlocked" id=achievementUnlocked>
-        </form>
-    </section>
-
-    <div id="Output">
-        <br>
-        <button style="margin-right: 10px; display:block size;">Create</button>
-        <button style="margin-right: 10px; display:block size;">Reset</button>
-</body>
-</div>
+<h1>Achievements List</h1>
 <section>
+    <form id="UserForm">
+        <br>
+        <label for="achievementName">Name:</label>
+        <input type="text" name="name" id=achievementName>
 
+        <label for="achievementDescription">Description:</label>
+        <input type="text" name="name" id=achievementDescription>
+
+        <label for="achievementValue">Value:</label>
+        <input type="text" name="name" id=achievementValue>
+
+        <label for="achievementUnlocked">Unlocked:</label>
+        <input type="boolean" name="name" id=achievementUnlocked>
+
+        <button style="margin-right: 10px; display:block size;" type="Create">Create</button>
+        <button style="margin-right: 10px; display:block size;" type="Reset">Reset</button>
+
+    </form>
+</main>
+<script src="./Scripts/index.js"></script>
+</body>
 </html>

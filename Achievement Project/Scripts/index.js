@@ -9,7 +9,7 @@ document.querySelector("#UserForm").addEventListener("submit", function (event) 
     achivementName: form.achievementName.value, 
     achievementDescription: form.achievementDescription.value, 
     achievementValue: form.achievementValue.value,
-    achievementUnlocked: form.achievementUnlocked.value,
+    achievementUnlocked: form.achievementUnlocked.checked,
 };
 console.log("DATA: ", data);
 form.reset();

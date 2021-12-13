@@ -1,36 +1,36 @@
 "use strict";
 
 //Read
-const Output = document.querySelector("#getOutput");
-getOutput => {
-const achievements = res.getOutput
+const getOutput = document.querySelector("#getOutput").addEventListener("submit", function (event)
+{ getOutput => {
+const achievements = ["read", "read my achievement", 100, true];
 
 for (let achievement of achievements) {
     console.log(achievement);
-    const AchievContainer = document.createElement("div");
+    const achievContainer = document.createElement("div");
     const achievementName = document.createElement("p");
     achievementName.innerText = `Name: ${achievement.achievementName}`;
-    AchievContainer.appendChild(achievementName);
+    achievContainer.appendChild(achievementName);
 
     const achievementDescription = document.createElement("p");
     achievementDescription.innerText = `Description: ${achievement.achievementDescription}`;
-    AchievContainer.appendChild(achievementDescription);
+    achievContainer.appendChild(achievementDescription);
 
     const achievementValue = document.createElement("p");
     achievementValue.innerText = `Value: ${achievement.achievementValue}`;
-    AchievContainer.appendChild(achievementValue);
+    achievContainer.appendChild(achievementValue);
 
     const achievementUnlocked = document.createElement("p");
     achievementUnlocked.innerText = `Unlocked: ${achievement.achievementUnlocked}`;
-    AchievContainer.appendChild(achievementUnlocked);
+    achievContainer.appendChild(achievementUnlocked);
 
-    getOutput.appendChild(AchievContainer);
-}
+    getOutput.appendChild(achievContainer);
+};
 }
 
 
 //Create
-const getOutput = document.querySelector("#Output");
+const Create = document.querySelector("#Output");
 document.querySelector("#UserForm").addEventListener("submit", function (event) {
     event.preventDefault(); 
     const form = this;
@@ -44,3 +44,4 @@ console.log("DATA: ", data);
 form.reset();
 console.log("Hello");
 });
+})

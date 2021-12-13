@@ -1,9 +1,26 @@
 "use strict";
 
+//Create
+const Create = document.querySelector("#Output");
+document.querySelector("#UserForm").addEventListener("submit", function (event) {
+    event.preventDefault(); 
+    const form = this;
+    const data = {
+    achivementName: form.achievementName.value, 
+    achievementDescription: form.achievementDescription.value, 
+    achievementValue: form.achievementValue.value,
+    achievementUnlocked: form.achievementUnlocked.checked,
+};
+console.log("DATA: ", data);
+form.reset();
+console.log("Hello");
+});
+
+
 //Read
 const getOutput = document.querySelector("#getOutput").addEventListener("submit", function (event)
 { getOutput => {
-const achievements = ["read", "read my achievement", 100, true];
+const achievements = [achievementName, achievementDescription, achievementValue, achievementUnlocked];
 
 for (let achievement of achievements) {
     console.log(achievement);
@@ -27,21 +44,4 @@ for (let achievement of achievements) {
     getOutput.appendChild(achievContainer);
 };
 }
-
-
-//Create
-const Create = document.querySelector("#Output");
-document.querySelector("#UserForm").addEventListener("submit", function (event) {
-    event.preventDefault(); 
-    const form = this;
-    const data = {
-    achivementName: form.achievementName.value, 
-    achievementDescription: form.achievementDescription.value, 
-    achievementValue: form.achievementValue.value,
-    achievementUnlocked: form.achievementUnlocked.checked,
-};
-console.log("DATA: ", data);
-form.reset();
-console.log("Hello");
-});
 })

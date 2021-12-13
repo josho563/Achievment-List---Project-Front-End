@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Achievement Project</title>
 </head>
+
 <body>
-    <h1>Achievements</h1> 
+    <h1>Achievements</h1>
     <br>
     <h1>Achievement Name</h1>
     <input type="checkbox">
-    <input type=name>
-    
+    <input type="text" name="name" id=achievementName>
+
     <h1>Description</h1>
-    <input type="checkbox">
-    <input type=name>
-    <h1>Achievement Value</h1>
-    <input type="checkbox">
-    <input type=name>
-    <h1>Achievement Unlocked</h1>  <!-- true or false -->
-    <input type="checkbox">
-    <input type=name>
-    <div id="getOutput">
-     <br> 
-     <button style="margin-right: 10px; display:block size;">Create</button>
-     <button style="margin-right: 10px; display:block size;">Reset</button>
+    <section>
+        <form id="UserForm">
+            <input type="checkbox">
+            <input type="text" name="name" id=achievementName>
+
+            <h1>Achievement Value</h1>
+            <input type="checkbox">
+            <input type="number" name="Value" id=achievementValue>
+
+            <h1>Achievement Unlocked</h1> <!-- true or false -->
+            <input type="checkbox">
+            <input type="boolean" name="Unlocked" id=achievementUnlocked>
+        </form>
+    </section>
+
+    <div id="Output">
+        <br>
+        <button style="margin-right: 10px; display:block size;">Create</button>
+        <button style="margin-right: 10px; display:block size;">Reset</button>
 </body>
-<script src="index.js"></script>
+</div>
+<section>
+
 </html>

@@ -7,47 +7,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Achievement Project</title>
 </head>
+
 <body style=background-color:lightcyan;>
-<h1 header style="color:darkolivegreen;
+    <h1 header style="color:darkolivegreen;
 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 text-align:center;border-style:solid;
 border-color:darkolivegreen;
 background-color:navajowhite;
 ">Achievements List</h1>
 
-<!-- Create Form -->
-<section>
-    <form id="UserForm">
-        <br>
-        <label for="achievementName">Name:</label>
-        <input type="text" name="achievementName" id=achievementName>
+    <!-- Create Form -->
+    <section>
+        <h1>Add Achievement</h1>
+        <form id="UserForm">
+            <br>
+            <label for="achievementName">Name:</label>
+            <input type="text" name="achievementName" id=achievementName>
 
-        <label for="achievementDescription">Description:</label>
-        <input type="text" name="achievementDescription" id=achievementDescription>
+            <label for="achievementDescription">Description:</label>
+            <input type="text" name="achievementDescription" id=achievementDescription>
 
-        <label for="achievementValue">Value:</label>
-        <input type="text" name="achievementValue" id=achievementValue>
+            <label for="achievementValue">Value:</label>
+            <input type="text" name="achievementValue" id=achievementValue>
 
-        <label for="achievementUnlocked">Unlocked:</label>
-        <input type="checkbox" name="achievementUnlocked" id=achievementUnlocked>
+            <label for="achievementUnlocked">Unlocked:</label>
+            <input type="checkbox" name="achievementUnlocked" id=achievementUnlocked>
 
-        <button style="margin-right: 10px; display:block size;" type="Create">Create</button>
-        <button style="margin-right: 10px; display:block size;" type="Reset">Reset</button>
+            <button style="margin-right: 10px; display:block size;" type="Create">Create</button>
+            <button style="margin-right: 10px; display:block size;" type="Reset">Reset</button>
 
-    </form>
+        </form>
+    </section>
+    <!-- Update Form -->
+    <section>
+        <h1>Update Achievement</h1>
+        <form id="UpdateUserForm">
+            <br>
+            <label for="achievementName">Name:</label>
+            <input type="text" name="achievementName" id=achievementName>
+
+            <label for="achievementDescription">Description:</label>
+            <input type="text" name="achievementDescription" id=achievementDescription>
+
+            <label for="achievementValue">Value:</label>
+            <input type="text" name="achievementValue" id=achievementValue>
+
+            <label for="achievementUnlocked">Unlocked:</label>
+            <input type="checkbox" name="achievementUnlocked" id=achievementUnlocked>
+
+            <button style="margin-right: 10px; display:block size;" type="Create">Update</button>
+            <button style="margin-right: 10px; display:block size;" type="Reset">Reset</button>
+        </form>
     </section>
     <section>
         <h2>Achievements</h2>
-      <div id="getOutput"></div>
-      <button style="margin-right: 10px; display:block size;" type="Get All">Get All</button>
-      </div>
+        <div id="getOutput"></div>
+        <button style="margin-right: 10px; display:block size;" type="Get All">Get All</button>
+        </div>
     </section>
-
-
-
     <div id="UserForm"></div>
-</div>
-</main>
-<script src="./Scripts/index.js"></script>
+    </div>
+    </main>
+    <script src="./Scripts/index.js"></script>
 </body>
+
 </html>

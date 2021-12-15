@@ -2,22 +2,23 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AchievementProject</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AchievementProject</title>
 </head>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"
-    integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw=="
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <style>
 </style>
 <link rel="stylesheet" type="text/css" href="./Styles/index.css">
 </style>
+
 <body style=background-color:seagreen>
-    <h1 header style="color:darkolivegreen;
+<h1 header style="color:darkolivegreen;
 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 text-align:center;border-style:solid;
 border-color:darkolivegreen;
@@ -30,28 +31,34 @@ background-color:navajowhite;
         <form id="UserForm">
             <br>
             <label for="achievementName">Name:</label>
-            <input type="text" name="achievementName" id=achievementName>
+            <input type="text" name="achievementName" id="achievementName">
 
             <label for="achievementDescription">Description:</label>
-            <input type="text" name="achievementDescription" id=achievementDescription>
+            <input type="text" name="achievementDescription" id="achievementDescription">
 
             <label for="achievementValue">Value:</label>
-            <input type="text" name="achievementValue" id=achievementValue>
+            <input type="text" name="achievementValue" id="achievementValue">
 
             <label for="achievementUnlocked">Unlocked:</label>
-            <input type="checkbox" name="achievementUnlocked" id=achievementUnlocked>
+            <input type="checkbox" name="achievementUnlocked" id="achievementUnlocked">
 
-            <button class="btn btn-primary" style="margin-right: 10px; display:block size;" type="Create">Create</button>
-            <button class="btn btn-secondary" style="margin-right: 10px; display:block size;" type="Reset">Reset</button>
+            <button class="btn btn-primary" style="margin-right: 10px; display:block size;"
+                type="Create">Create</button>
+            <button class="btn btn-secondary" style="margin-right: 10px; display:block size;"
+                type="Reset">Reset</button>
 
         </form>
     </section>
     <br>
-
+    <hr>
     <!-- Update Form -->
     <section>
         <h1>Update Achievement</h1>
+
         <form id="UserForm">
+            <h6>Please enter the ID of the Achievement you wish to update</h6>
+            <label for="achievementId">ID:</label>
+            <input type="text" name="achievementId" id=achievementId>
             <br>
             <label for="achievementName">Name:</label>
             <input type="text" name="achievementName" id=achievementName>
@@ -65,34 +72,36 @@ background-color:navajowhite;
             <label for="achievementUnlocked">Unlocked:</label>
             <input type="checkbox" name="achievementUnlocked" id=achievementUnlocked>
 
-            <button class="btn btn-primary" style="margin-right: 10px; display:block size;" type="Create">update</button>
-            <button class="btn btn-secondary" style="margin-right: 10px; display:block size;" type="Reset">Reset</button>
+            <button class="btn btn-primary" style="margin-right: 10px; display:block size;"
+                type="Create">update</button>
+            <button class="btn btn-secondary" style="margin-right: 10px; display:block size;"
+                type="Reset">Reset</button>
 
         </form>
     </section>
-
-<!-- View All -->
+    <hr>
+    <!-- View All -->
     <section>
         <h2>Achievements</h2>
         <div id="getOutput"></div>
         <button class="btn btn-primary" style="margin-right: 10px; display:block size;" type="Get All">Get All</button>
         </div>
     </section>
+    <hr>
+    <!-- Delete Achievement -->
+    <section>
+        <h3>Delete Achievements</h3>
+        <br>
+        <form id="deleteForm">
+            <label class="form-label" for="achievementName">Achievement ID:<label class="form-label">
+                    <input class="form-label" class="form-control" type="text" name="achievementName"
+                        id="achievementName">
+                    <button class="btn btn-primary" type="submit">Delete</button>
 
-<!-- Delete Achievement -->
-<section>
-    <h3>Delete Achievements</h3>
-    <br>
-    <form id="deleteForm">
-      <label class="form-label" for="achievementName">Achievement Name:<label class="form-label">
-      <input class="form-label" class="form-control" type="text" name="achievementName" id="achievementName">
-      <button class="btn btn-primary" type="submit">Delete</button>
 
-
-    <div id="UserForm"></div>
-    </div>
-    </main>
-    <script src="./Scripts/index.js"></script>
+                    <div id="UserForm"></div>
+                    </div>
+                    </main>
+                    <script src="./Scripts/index.js"></script>
 </body>
-
 </html>

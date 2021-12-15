@@ -3,7 +3,7 @@ const promisesPromises = new Promise((resolve, reject) => {
 });
 
 const onSuccess = res => console.log("Success", res);
-const onFailure = err => console.log("Success", res);
+const onFailure = err => console.log("failure", res);
 
 promisesPromises.then(onSuccess).catch(onFailure);
 

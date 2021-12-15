@@ -36,24 +36,27 @@ axios
     })
 
 // //Update
-// const Update = document.querySelector("#Output");
-// document.querySelector("#UserForm").addEventListener("submit", function (event) {
-//     event.preventDefault();
-//     const form = this;
-//     const data = {
-//         achivementId: form.achivementId.value,
-//         achivementName: form.achievementName.value,
-//         achievementDescription: form.achievementDescription.value,
-//         achievementValue: form.achievementValue.value,
-//         achievementUnlocked: form.achievementUnlocked.checked,
-//     };
-//     axios.put(`http://localhost:8080/replace/${name}`, data)
-//         .then(res => console.log(res))
-//         .catch(err => console.error(err));
-// });
-// console.log("DATA: ", data);
-// form.reset();
-// console.log("Hello");
+const Update = document.querySelector("#Output");
+document.querySelector("#updateForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+    const form = this;
+    const data = {
+        achievementId: (form.achievementId.value),
+        achivementName: form.achievementName.value,
+        achievementDescription: form.achievementDescription.value,
+        achievementValue: form.achievementValue.value,
+        achievementUnlocked: form.achievementUnlocked.checked,
+    };
+    console.log("DATA: ", data);
+    axios.put(`http://localhost:8080/replace/${form.achievementId.value}` ,data)
+    // ${data.achievementId}`)
+        .then(res => {
+        form.reset();
+        form.achievementName.focus();
+        })
+        .catch(err => console.error(err));
+        window.alert("Update Success")
+});
 
 //delete
 document.querySelector("#deleteForm").addEventListener("submit", function (event) {
@@ -72,8 +75,7 @@ document.querySelector("#deleteForm").addEventListener("submit", function (event
 
 //Create
 const Create = document.querySelector("#Output");
-console.log("Hello");
-document.querySelector("#UserForm").addEventListener("submit", function (event) {
+document.querySelector("#createForm").addEventListener("submit", function (event) {
     event.preventDefault();
     const form = this;
     const data = {
@@ -82,8 +84,6 @@ document.querySelector("#UserForm").addEventListener("submit", function (event) 
         achievementValue: form.achievementValue.value,
         achievementUnlocked: form.achievementUnlocked.checked,
     };
-
-
     console.log("DATA: ", data);
     form.reset();
     form.achievementName.focus();

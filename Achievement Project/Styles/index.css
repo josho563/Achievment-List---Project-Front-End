@@ -1,5 +1,11 @@
 body {
-    background: linear-gradient(268deg, #459475, #448a0b);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    color: #f8f8f8;
+
+    background: linear-gradient(270deg, #19435f, #1d521f);
     background-size: 400% 400%;
 
     -webkit-animation: AnimationName 30s ease infinite;
@@ -21,4 +27,8 @@ body {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
+}
+
+h1 {
+
 }

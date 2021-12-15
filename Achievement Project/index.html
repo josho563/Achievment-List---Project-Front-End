@@ -24,11 +24,11 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
 
     </div>
 
-<h1 header style="color:darkolivegreen;
+<h1 header style="color:#1d521f;
 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 text-align:center;border-style:solid;
 border-color:darkolivegreen;
-background-color:navajowhite;
+background-color:ivory;
 ">Achievements List</h1>
 
     <!-- Create Form -->
@@ -42,12 +42,15 @@ background-color:navajowhite;
                 <div class="col">
                     <input type="text" class="form-control" placeholder="Achievement Description" aria-label="Achievement Description" input type="text" name="achievementDescription" id="achievementDescription">
                   </div>
+                  <br>
                   <div class="col">
                     <input type="text" class="form-control" placeholder="Achievement Value" aria-label="Achievement Value" input type="text" name="achievementValue" id="achievementValue">
                   </div>
+                  <br>
                   <div class="col">
                     <label for="achievementUnlocked">Unlocked:</label>
             <input type="checkbox" name="achievementUnlocked" id="achievementUnlocked">
+            <br>
                   </div>
               </div>
             <br>
@@ -100,13 +103,13 @@ background-color:navajowhite;
     <hr>
     <!-- Delete Achievement -->
     <section>
-        <h3>Delete Achievements</h3>
+        <h3 class="alert alert-danger" >Delete Achievements</h3>
         <br>
         <form id="deleteForm">
             <label class="form-label" for="achievementName">Achievement ID:<label class="form-label">
                     <input class="form-label" class="form-control" type="text" name="achievementName"
                         id="achievementName">
-                    <button class="btn btn-primary" type="submit">Delete</button>
+                    <button class="btn btn-danger" type="submit">Delete</button>
 
 
                     <div id="UserForm"></div>
